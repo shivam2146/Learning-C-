@@ -22,7 +22,7 @@ void fastscan(int &number)
     // Keep on extracting characters if they are integers
     // i.e ASCII Value lies from '0'(48) to '9' (57)
     for (; (c>47 && c<58); c=getchar_unlocked())
-        number = number *10 + c - 48;
+        number = number *10 + c - 48;           //i suggest u to use bitwise operator to compute this expression
  
     // if scanned input has a negative sign, negate the
     // value of the input number

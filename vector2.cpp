@@ -13,5 +13,20 @@ int main(){
   vec[1].push_back(15);
   func(vec);
   func1(vec1);
+
+  vector<int> vec2(10,5);
+  vec2.push_back(6);
+  vec2.push_back(54);
+  vector<int>::reverse_iterator ri;
+  cout<<"\ncontent of vec2 in reverse using reverse_iterator:\n";
+  for(ri=vec2.rbegin();ri!= vec2.rend();ri++)  //returns a reverse iterator pointing to the last element in the vector (reverse beginning)
+      cout<<*ri<<" ";                         // Returns a reverse iterator pointing to the theoretical element preceding the first element in the vector
+  vec2.pop_back();
+  cout<<"\nmax_size "<<vec2.max_size();
+  cout<<"\ncapacity "<<vec2.capacity();
+  cout<<"\nsize "<<vec2.size();
+  cout<<"\nelement at pos 10 :"<<vec2.at(10);   //gives element at index 10
+  cout<<"\nelement at front: "<<vec2.front();
+  cout<<"\nelement at back: "<<vec2.back();
   return 0;
 }

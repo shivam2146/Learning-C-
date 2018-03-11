@@ -1,20 +1,21 @@
 #include<iostream>
 using namespace std;
 
+
 template<class T,class U=char>
 class test{
 	T mem1;
 	U mem2;
   public:
-	test(T a,U b);	
+	test(T a,U b);
 	void display();
 };
 
 template<class T,class U>
 test<T,U>::test(T a,U b){
 	mem1 = a;
-	mem2 = b;	
-	
+	mem2 = b;
+
 }
 
 template<class T,class U>
